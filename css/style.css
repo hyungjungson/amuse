@@ -38,7 +38,7 @@ a {text-decoration:none;}
 /*team*/
 #fullpage .section:nth-child(4) {   background:  linear-gradient(to right, #ff4a2c, #fd1c1b);
 }
-#fullpage .section .team { margin:0 auto; width:1000px; }
+#fullpage .section .team { overflow:hidden; margin:0 auto; width:1000px; }
 
 
 #fullpage .section .team_member { background:red; float:left; width:300px; height:555px; } 
