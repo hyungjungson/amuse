@@ -41,13 +41,14 @@ a {text-decoration:none;}
 #fullpage .section .team { overflow:hidden; margin:0 auto; width:1000px; }
 
 
-#fullpage .section .team_member { background:red; float:left; width:300px; height:555px; } 
-#fullpage .section .team_member:nth-child(3) { margin:0 50px; }
-#fullpage .section .team_member .photo { margin:0 auto; width:260px; height:260px;  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+#fullpage .section .team_member, 
+#fullpage .section .team_member2 { background:red; float:left; width:300px; height:555px; } 
+#fullpage .section .team_member:nth-child(3),#fullpage .section .team_member2:nth-child(2) { margin:0 50px; }
+#fullpage .section .team_member .photo , #fullpage .section .team_member2 .photo{ margin:0 auto; width:260px; height:260px;  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     background-image: linear-gradient(to right, #ff4a2c, #fd1c1b); 
     border-radius: 50%;
  }
- #fullpage .section .team_member p { text-align:center; color:#fff; }
+ #fullpage .section .team_member p, #fullpage .section .team_member2 p { text-align:center; color:#fff; }
 
 #fullpage .section h2 { height:120px; font-size:47px; font-weight:bold; line-height:120px; text-align: center; }
 
@@ -63,3 +64,11 @@ a {text-decoration:none;}
 #fullpage .section:nth-child(3) { background:yellow; }
 #fullpage .section:nth-child(4) { background:rgb(0, 247, 255); }
 */
+
+
+
+/*footer*/
+.footer { background:#f5f5f5; border-top:1px solid #e3e3e3; width:100%; height:159px; }
+.footer .foot { margin:0 auto; width:1000px; height:100%; }
+.footer .foot address { font-size:13px; color:#999;  }
+.footer .foot address span { font-size:13px; color:#fc1b1b; }
