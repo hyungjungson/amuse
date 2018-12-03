@@ -62,3 +62,6 @@ a.button {
 }
 /*add*/
 li { list-style:none; }
+button { border:none; }
+em { font-style:normal; }
+a { text-decoration: none; cursor: pointer;}
