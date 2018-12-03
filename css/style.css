@@ -50,10 +50,10 @@ a {text-decoration:none;}
  }
  #fullpage .section .team_member p, #fullpage .section .team_member2 p { text-align:center; color:#fff; }
 
-#fullpage .section h2 { height:120px; font-size:47px; font-weight:bold; line-height:120px; text-align: center; }
-
+#fullpage .section h2 { position:relative;height:120px; font-size:47px; font-weight:bold; line-height:120px; text-align: center; }
+#fullpage .section h2::after { content: ""; top:20px; left:500px; position:absolute; width:50px; height:50px;  background: url(../images/frame.png)center center;}
 /*advisor*/
-#fullpage .section:nth-child(5) {   background:  linear-gradient(to right, #ff4a2c, #fd1c1b);
+#fullpage .section:nth-child(5) { background:  linear-gradient(to right, #ff4a2c, #fd1c1b);
 }
 
 /*
