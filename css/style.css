@@ -30,6 +30,20 @@ a {
     margin-top: 0;
     text-align: center;
 }
+.header .logo .gnb {
+    margin-top:-40px;
+}
+.header .logo .gnb li a {
+ display:inline-block; 
+ margin-left:1055px;
+ width: 53px;height:28px;
+ border:1px solid #fd1c1b;
+ font-size: 14px;
+ line-height:28px;
+ font-weight: bold;
+ text-align: center;
+ color: #fd1c1b;
+}
 
 .header .logo h1 a {
     padding-top: 25px;
@@ -83,6 +97,36 @@ a {
 
 
 
+/*roadmap*/
+
+#fullpage .section h2 {
+    position: relative;
+    margin-top: 0;
+    height: 200px;
+    font-size: 47px;
+    font-weight: bold;
+    line-height: 200px;
+    text-align: center;
+}
+#fullpage .section:nth-child(1) h2 { 
+    margin:0 auto;
+    width:1200px;
+    
+}
+
+#fullpage .section h2::after {
+    content: "";
+    top: 60px;
+    left: 480px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(../images/frame.png)center center;
+}
+
+
+/*whitepaper*/
+
 .youtube {
     margin: 0 auto;
     width: 1000px;
@@ -127,9 +171,10 @@ a {
 
 .partner a {
     display: inline-block;
-    border: 1px solid #252020;
     width: 245px;
-    height: 225px;
+    height: 10px;
+    text-align:center;
+    line-height:150px;
 }
 
 .partners h2 {
@@ -140,12 +185,45 @@ a {
     color: #333;
 }
 
+#fullpage .youtube h2::after {
+    content: "";
+    top: 60px;
+    left: 345px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(../images/frame.png)center center;
+}
 
+
+/*partner*/
+#fullpage .partner h2::after {
+    content: "";
+    top: 60px;
+    left: 370px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(../images/frame.png)center center;
+}
+ 
 
 /*team*/
 #fullpage .section:nth-child(4) {
     background: linear-gradient(to right, #ff4a2c, #fd1c1b);
 }
+
+
+#fullpage .team h2::after {
+    content: "";
+    top: 60px;
+    left: 415px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(../images/frame2.png)center center;
+}
+ 
 
 #fullpage .section .team {
     overflow: hidden;
@@ -156,14 +234,13 @@ a {
 
 #fullpage .section .team_member,
 #fullpage .section .team_member2 {
-    background: red;
     float: left;
     width: 300px;
     height: 555px;
 }
 
 #fullpage .section .team_member:nth-child(3),
-#fullpage .section .team_member2:nth-child(2) {
+#fullpage .section .team_member2:nth-child(3) {
     margin: 0 50px;
 }
 
@@ -173,41 +250,64 @@ a {
     width: 260px;
     height: 260px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to right, #ff4a2c, #fd1c1b);
+    
+    background:url(../images/team/team01.jpg);
     border-radius: 50%;
 }
 
-#fullpage .section .team_member p,
-#fullpage .section .team_member2 p {
+#fullpage .section .team_member:nth-child(2) .photo ,#fullpage .section .team_member2:nth-child(2) .photo{
+    background:url(../images/team/team01.jpg);
+}
+#fullpage .section .team_member:nth-child(3) .photo , #fullpage .section .team_member2:nth-child(3) .photo{
+    background:url(../images/team/team02.jpg);
+}
+#fullpage .section .team_member:nth-child(4) .photo,#fullpage .section .team_member2:nth-child(4) .photo {
+    background:url(../images/team/team03.jpg);
+}
+
+
+
+
+#fullpage .section .team_member  .mem_tit01 , #fullpage .section .team_member2 .mem_tit01 { 
+    margin:9px 0;
+    font-family: NanumSquareB;
+    font-size: 21px;
+    line-height: 1.5;
     text-align: center;
-    color: #fff;
+    letter-spacing: -0.4px;
+    color: #ffffff;
 }
-
-#fullpage .section h2 {
-    position: relative;
-    margin-top: 0;
-    height: 120px;
-    font-size: 47px;
-    font-weight: bold;
-    line-height: 120px;
+#fullpage .section .team_member  .mem_tit02 , #fullpage .section .team_member2 .mem_tit02 {
+    margin:9px 0;
+    font-family: NanumSquareB;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
     text-align: center;
+    color: #ffffff;
 }
-
-#fullpage .section h2::after {
-    content: "";
-    top: 20px;
-    left: 350px;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: url(../images/frame.png)center center;
+#fullpage .section .team_member  .mem_tit03 , #fullpage .section .team_member2 .mem_tit03 {
+    margin:9px 0;
+    font-family: NanumSquareR;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: #ee8c80;   
 }
-
 /*advisor*/
 #fullpage .section:nth-child(5) {
     background: linear-gradient(to right, #ff4a2c, #fd1c1b);
 }
-
+#fullpage .team2 h2::after {
+    content: "";
+    top: 60px;
+    left: 390px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(../images/frame2.png)center center;
+}
 /*
 #fullpage .section  { height:820px !important; }
 
@@ -228,7 +328,7 @@ a {
 
 #fullpage .section .notice h2::after {
     content: "";
-    top: 20px;
+    top: 60px;
     left: 500px;
     position: absolute;
     width: 50px;
@@ -286,11 +386,38 @@ a {
 }
 
 
+/*pager*/
+ul.pager {
+    overflow:hidden;
+    padding:55px 0 0;
+    margin:0 auto;
+    width:270px;
+
+}
+ul.pager li { float:left; }
+ul.pager li a {
+	float:left;
+	padding:4px;
+	margin-right:3px;
+	width:15px;
+	color:#666;
+    font-size:16px; 
+    font-weight:5..;
+	text-align:center;
+	text-decoration:none;
+}
+ul.pager li a:hover, ul li a:focus {
+	color:#fc1b1b;
+}
+	
+
+
+
 /*contact*/
 #fullpage .section .contact h2::after {
     content: "";
-    top: 20px;
-    left: 540px;
+    top: 60px;
+    left: 480px;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -304,7 +431,7 @@ a {
     color: #fc1b1b;
 }
 
-#fullpage .section .contact p {
+#fullpage .section .contact > p {
     display: block;
     font-size: 15px;
     text-align: center;
@@ -313,25 +440,32 @@ a {
 }
 
 
-
-
-
-
-/*폼메일*/
+/*form_mail*/
+.contact { margin:0 auto; width:1200px; }
+.contact_form form { overflow:hidden; }
+.contact_form form p.radio {   font-family: NanumSquareB;
+    font-size: 15px; letter-spacing: -0.3px;  text-align:left; color: #333333;}
+    .contact_form form input[type="radio"] { margin-left:29px; }
+    .contact_form form input[type="radio"]:nth-child(1)  { margin-left:0; }
 .contact_form input[type=text],
 .contact_form select,
 .contact_form textarea,
 .contact_form input[type=email],
 .contact_form input[type=tel] {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 16px;
+    border: 2px solid #c7c7c7;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     resize: vertical;
 }
+
+.contact_form .fm_left { float:left; margin-left:1px; width:49%; }
+.contact_form .fm_left input { width:528px; }
+.contact_form .fm_right { float:right; margin-right:1px; width:50%; }
+.contact_form .fm_right textarea {float:right; width:528px; height:121px; }
+
 
 .contact_form>h3 {
     text-align: center;
@@ -343,11 +477,12 @@ a {
 }
 
 .contact_form input[type=submit] {
-    background-color: #737373;
+    float:right; 
+    background-image: linear-gradient(to right, #ff4a2c, #fd1c1b);
+    font-size:14px;
     color: white;
-    padding: 12px 20px;
+    padding: 23px 30px 22px ;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     transition: 0.3s;
 }
